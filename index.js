@@ -23,8 +23,8 @@ function jarvisReply(msg) {
     reply=  "hello Ayaan how are you?";
   } else if (lower.includes('fine how are u')){
     reply= "im also fine how may help you now ";
-  } else if( lower.includes("umama kaun hai")){
-    reply= "hizruboi hai";
+  } else if( lower.includes(' umama kaun hai')){
+    reply= 'hizruboi hai';
   }
 
   appendMessage('Jarvis', reply);
@@ -179,4 +179,5 @@ function appendMessage(sender, text) {
   chatbox.appendChild(p);
   chatbox.scrollTop = chatbox.scrollHeight;
 }
+
 
